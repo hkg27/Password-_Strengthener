@@ -1,6 +1,8 @@
 ***summary of project***
 A Password Strengthener Extension for chrome.
+
 --> uses a static replacement cipher method to Strengthen user Passwords.
+
 --> Also create Strong Random Passwords..
 
 
@@ -13,8 +15,11 @@ A Password Strengthener Extension for chrome.
 ***@HKG***
 ***How to install and Use***
 download or fork thee project to U'r device,
+
 open chrome go to extensions, turn on Developer Mode
+
 choose unpack select the project location 
+
 now U can you the project in chrome extensions...💖
 
 
