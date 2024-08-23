@@ -1,0 +1,18 @@
+body{
+    width: 350px;
+    border: 2px solid gray;
+    border-radius: 5px;
+    background-color: rgb(29, 31, 33);
+    color: white;
+}
+.content {
+    justify-content: center;
+    
+    margin: 50px;     
+}
+#generateBtn, #generatenew{
+    background-color: rgb(216, 216, 216);
+    color: black;
+    padding: 5px;
+    border-radius: 10px;
+}
