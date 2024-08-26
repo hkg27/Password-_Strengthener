@@ -60,6 +60,14 @@ function generates(s) {
     } else {
         let alph = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
         let alp2 = "abcdefghijklmnopqrstuvwxyz";
+        let sp ="!@#$%^&*()<>{}"
+        if(special < 2)
+        {
+            while ((2 - special) > 0) {
+                s1 += sp[Math.floor(Math.random() *14)];
+                special++;
+            }
+        }
 
         if (capital < 2) {
             while ((2 - capital) > 0) {
@@ -87,3 +95,46 @@ function generates(s) {
     }
 }
 
+document.getElementById("generatenew").addEventListener("click", newgen);
+
+function newgen(){
+    var s1="";
+    var c = 0;
+    var s = 0;
+    var n = 0;
+    var sp = 0;
+    let alph = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+    let alp2 = "abcdefghijklmnopqrstuvwxyz";
+    let sym ="!@#$^&<>?{}()|";
+    let num="1234567890";
+    while (c < 2) {
+        s1 += alph[Math.floor(Math.random() * alph.length)];
+        c++;
+    }
+
+    while (n < 2) {
+        s1 += Math.floor(Math.random() * 10);
+        n++;
+    }
+    
+    while (sp < 2) {
+        s1 += sym[Math.floor(Math.random() * sym.length)];
+        sp++;
+    }
+
+    while (s < 4) {
+        s1 += alp2[Math.floor(Math.random() * alp2.length)];
+        s++;
+    }
+
+    
+
+   
+    let allChars = alph + alp2 + sym + num;
+    while (s1.length < 12) {
+        s1 += allChars[Math.floor(Math.random() * allChars.length)];
+    }
+
+        document.getElementById("tx").value = s1;
+    
+}
